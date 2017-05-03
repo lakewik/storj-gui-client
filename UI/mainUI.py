@@ -9,18 +9,18 @@ import os
 from PyQt4 import QtCore, QtGui
 from six import print_
 
-from qt_interfaces.dashboard_ui import Ui_MainMenu
-from bucket_edition import BucketEditingUI
-from client_config import ClientConfigurationUI
-from engine import StorjEngine
-from file_download import SingleFileDownloadUI
-from file_mirror import FileMirrorsListUI
-from file_upload import SingleFileUploadUI
-from utilities.tools import Tools
+from .qt_interfaces.dashboard_ui import Ui_MainMenu
+from .bucket_edition import BucketEditingUI
+from .client_config import ClientConfigurationUI
+from .engine import StorjEngine
+from .file_download import SingleFileDownloadUI
+from .file_mirror import FileMirrorsListUI
+from .file_upload import SingleFileUploadUI
+from .utilities.tools import Tools
 
 
-from resources.constants import DISPLAY_FILE_CREATION_DATE_IN_MAIN, FILE_LIST_SORTING_MAIN_ENABLED
-from resources.custom_qt_interfaces import TableModel
+from .resources.constants import DISPLAY_FILE_CREATION_DATE_IN_MAIN, FILE_LIST_SORTING_MAIN_ENABLED
+from .resources.custom_qt_interfaces import TableModel
 
 
 

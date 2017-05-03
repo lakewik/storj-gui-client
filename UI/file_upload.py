@@ -18,17 +18,17 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QMessageBox
 from six import print_
 
-from crypto.crypto_tools import CryptoTools
-from crypto.file_crypto_tools import FileCrypto
-from engine import StorjEngine
-from qt_interfaces.file_upload_new import Ui_SingleFileUpload
-from utilities.backend_config import Configuration
-from utilities.tools import Tools
+from .crypto.crypto_tools import CryptoTools
+from .crypto.file_crypto_tools import FileCrypto
+from .engine import StorjEngine
+from .qt_interfaces.file_upload_new import Ui_SingleFileUpload
+from .utilities.backend_config import Configuration
+from .utilities.tools import Tools
 
-from resources.html_strings import html_format_begin, html_format_end
-from resources.constants import MAX_RETRIES_UPLOAD_TO_SAME_FARMER, \
+from .resources.html_strings import html_format_begin, html_format_end
+from .resources.constants import MAX_RETRIES_UPLOAD_TO_SAME_FARMER, \
     MAX_RETRIES_NEGOTIATE_CONTRACT
-from resources.internal_backend_config_variables import APPLY_SELECTED_BUCKET_TO_UPLOADER
+from .resources.internal_backend_config_variables import APPLY_SELECTED_BUCKET_TO_UPLOADER
 
 class SingleFileUploadUI(QtGui.QMainWindow):
     __logger = logging.getLogger('%s.SingleFileUploadUI' % __name__)

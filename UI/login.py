@@ -7,9 +7,9 @@ import storj
 
 from PyQt4 import QtCore, QtGui
 
-from mainUI import MainUI
-from qt_interfaces.login_ui_new import Ui_Login
-from utilities.account_manager import AccountManager
+from .mainUI import MainUI
+from .qt_interfaces.login_ui_new import Ui_Login
+from .utilities.account_manager import AccountManager
 
 
 class LoginUI(QtGui.QMainWindow):

@@ -4,10 +4,10 @@ import logging
 
 from PyQt4 import QtCore, QtGui
 
-from engine import StorjEngine
-from login import LoginUI
-from qt_interfaces.initial_window_ui_new import Ui_InitialWindow
-from registration import RegisterUI
+from .engine import StorjEngine
+from .login import LoginUI
+from .qt_interfaces.initial_window_ui_new import Ui_InitialWindow
+from .registration import RegisterUI
 
 
 class InitialWindowUI(QtGui.QMainWindow):

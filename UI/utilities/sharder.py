@@ -1,6 +1,6 @@
 import math
 import os
-from log_manager import logger
+from .log_manager import logger
 from six import print_
 
 # global SHARD_MULTIPLES_BACK, MAX_SHARD_SIZE

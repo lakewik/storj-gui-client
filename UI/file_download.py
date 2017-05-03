@@ -12,11 +12,11 @@ from PyQt4.QtGui import QMessageBox
 from PyQt4.QtGui import QProgressBar
 from PyQt4.QtGui import QTableWidgetItem
 
-from utilities.sharder import ShardingTools
-from utilities.tools import Tools
-from qt_interfaces.file_download_new import Ui_SingleFileDownload
-from crypto.file_crypto_tools import FileCrypto
-from engine import StorjEngine
+from .utilities.sharder import ShardingTools
+from .utilities.tools import Tools
+from .qt_interfaces.file_download_new import Ui_SingleFileDownload
+from .crypto.file_crypto_tools import FileCrypto
+from .engine import StorjEngine
 import storj
 # import storj.exception
 import threading
@@ -24,10 +24,10 @@ import storj.exception as stjex
 
 # from logs_backend import LogsUI
 # from logs_backend import LogHandler, logger
-from utilities.log_manager import logger
+from .utilities.log_manager import logger
 
-from resources.html_strings import html_format_begin, html_format_end
-from utilities.account_manager import AccountManager
+from .resources.html_strings import html_format_begin, html_format_end
+from .utilities.account_manager import AccountManager
 import time
 
 #from resources.custom_qt_components import YesNoCheckboxDialog

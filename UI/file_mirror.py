@@ -1,16 +1,16 @@
 import json
 import threading
 from PyQt4 import QtCore, QtGui
-from qt_interfaces.file_mirrors_ui_new import Ui_FileMirrorsList
+from .qt_interfaces.file_mirrors_ui_new import Ui_FileMirrorsList
 import storj.exception as sjexc
 
-from engine import StorjEngine
-from node_details import NodeDetailsUI
+from .engine import StorjEngine
+from .node_details import NodeDetailsUI
 #from UI.engine import StorjEngine
 #from UI.node_details import NodeDetailsUI
 
-from resources.html_strings import html_format_begin, html_format_end
-from utilities.log_manager import logger
+from .resources.html_strings import html_format_begin, html_format_end
+from .utilities.log_manager import logger
 
 
 # Mirrors section

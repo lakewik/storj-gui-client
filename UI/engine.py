@@ -3,7 +3,7 @@
 import logging
 import storj
 
-from utilities.account_manager import AccountManager
+from .utilities.account_manager import AccountManager
 
 
 class StorjEngine:

@@ -4,8 +4,8 @@ import logging
 
 from PyQt4 import QtCore, QtGui
 
-from qt_interfaces.settings_ui_new import Ui_ClientConfiguration
-from utilities.backend_config import Configuration
+from .qt_interfaces.settings_ui_new import Ui_ClientConfiguration
+from .utilities.backend_config import Configuration
 
 
 class ClientConfigurationUI(QtGui.QMainWindow):

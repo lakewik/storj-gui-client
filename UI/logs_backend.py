@@ -8,8 +8,8 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QHBoxLayout, QTableWidgetItem, QWidget
 from six import print_
 
-from image_widget import ImageWidget
-from qt_interfaces.logs_table_ui import Ui_Logs
+from .image_widget import ImageWidget
+from .qt_interfaces.logs_table_ui import Ui_Logs
 
 
 class LogsUI(QtGui.QMainWindow):
