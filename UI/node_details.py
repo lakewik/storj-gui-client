@@ -10,10 +10,10 @@ import storj.exception as sjexc
 
 from PyQt4 import QtCore, QtGui
 
-from qt_interfaces.node_details_new import Ui_NodeDetails
-from engine import StorjEngine
+from .qt_interfaces.node_details_new import Ui_NodeDetails
+from .engine import StorjEngine
 from ipwhois import IPWhois
-from utilities.tools import Tools
+from .utilities.tools import Tools
 
 
 # Node details section

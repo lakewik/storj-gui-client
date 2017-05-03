@@ -1,6 +1,7 @@
 import math
 import os
-from log_manager import logger
+from .log_manager import logger
+from six import print_
 
 # global SHARD_MULTIPLES_BACK, MAX_SHARD_SIZE
 
@@ -48,7 +49,7 @@ class ShardingTools():
         byte_multiple = self.shard_size(accumulator)
 
         check = file_size / byte_multiple
-        # print check
+        # print_(check)
         if (check > 0 and check <= 1):
             while (hops > 0 and self.shard_size(hops) > self.MAX_SHARD_SIZE):
                 if hops - 1 <= 0:
@@ -86,7 +87,7 @@ class ShardingTools():
         bname_input = str((os.path.split(shards_filepath))[1]).decode('utf-8')
         bname2_input = bname_input
 
-        print "sciezka shardow" + shards_filepath + " " + destination_file_path
+        print_("sciezka shardow" + shards_filepath + " " + destination_file_path)
 
         input_directory = str((os.path.split(shards_filepath))[0]).decode('utf-8')
         output_directory = str((os.path.split(destination_file_path))[0]).decode('utf-8')

@@ -3,9 +3,9 @@
 import logging
 import threading
 
-from engine import StorjEngine
+from .engine import StorjEngine
 from PyQt4 import QtCore, QtGui
-from qt_interfaces.create_bucket_ui import Ui_BucketCreate
+from .qt_interfaces.create_bucket_ui import Ui_BucketCreate
 
 import storj.exception as sjexc
 

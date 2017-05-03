@@ -6,9 +6,10 @@ import logging.handlers
 
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QHBoxLayout, QTableWidgetItem, QWidget
+from six import print_
 
-from image_widget import ImageWidget
-from qt_interfaces.logs_table_ui import Ui_Logs
+from .image_widget import ImageWidget
+from .qt_interfaces.logs_table_ui import Ui_Logs
 
 
 class LogsUI(QtGui.QMainWindow):
@@ -53,7 +54,7 @@ class LogsUI(QtGui.QMainWindow):
                 if json_log_upload:
                     json_log_upload = json_log_upload.replace("'", '"')
                     json_log_upload = json_log_upload.decode('utf-8-sig')
-                    print json_log_upload
+                    print_(json_log_upload)
                     j = json.loads(json_log_upload.encode('utf-8'))
                     log_content_array['log_event_type'] = j['log_event_type']
                     log_content_array['title'] = j['title']

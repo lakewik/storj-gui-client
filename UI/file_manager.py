@@ -7,12 +7,12 @@ import storj.exception as sjexc
 
 from PyQt4 import QtCore, QtGui
 
-from engine import StorjEngine
-from file_download import SingleFileDownloadUI
-from file_mirror import FileMirrorsListUI
-from file_upload import SingleFileUploadUI
-from qt_interfaces.file_manager_ui import Ui_FileManager
-from utilities.tools import Tools
+from .engine import StorjEngine
+from .file_download import SingleFileDownloadUI
+from .file_mirror import FileMirrorsListUI
+from .file_upload import SingleFileUploadUI
+from .qt_interfaces.file_manager_ui import Ui_FileManager
+from .utilities.tools import Tools
 
 
 class FileManagerUI(QtGui.QMainWindow):

@@ -7,19 +7,20 @@ import storj.exception as sjexc
 import os
 
 from PyQt4 import QtCore, QtGui
+from six import print_
 
-from qt_interfaces.dashboard_ui import Ui_MainMenu
-from bucket_edition import BucketEditingUI
-from client_config import ClientConfigurationUI
-from engine import StorjEngine
-from file_download import SingleFileDownloadUI
-from file_mirror import FileMirrorsListUI
-from file_upload import SingleFileUploadUI
-from utilities.tools import Tools
+from .qt_interfaces.dashboard_ui import Ui_MainMenu
+from .bucket_edition import BucketEditingUI
+from .client_config import ClientConfigurationUI
+from .engine import StorjEngine
+from .file_download import SingleFileDownloadUI
+from .file_mirror import FileMirrorsListUI
+from .file_upload import SingleFileUploadUI
+from .utilities.tools import Tools
 
 
-from resources.constants import DISPLAY_FILE_CREATION_DATE_IN_MAIN, FILE_LIST_SORTING_MAIN_ENABLED
-from resources.custom_qt_interfaces import TableModel
+from .resources.constants import DISPLAY_FILE_CREATION_DATE_IN_MAIN, FILE_LIST_SORTING_MAIN_ENABLED
+from .resources.custom_qt_interfaces import TableModel
 
 
 
@@ -230,7 +231,7 @@ class MainUI(QtGui.QMainWindow):
                 item = QtGui.QStandardItem(str(self.file_details['id']))
                 model.setItem(i, 2, item)  # row, column, item (QStandardItem)
 
-                #print self.file_details
+                #print_(self.file_details)
 
                 if DISPLAY_FILE_CREATION_DATE_IN_MAIN:
                     item = QtGui.QStandardItem(str(self.file_details['created']).replace('Z', "").replace('T', " "))

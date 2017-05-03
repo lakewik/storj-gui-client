@@ -3,7 +3,7 @@
 import os
 
 import errno
-import pingparser
+from . import pingparser
 import platform
 import re
 import tempfile
