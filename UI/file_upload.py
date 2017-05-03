@@ -16,6 +16,7 @@ import storj.model
 
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QMessageBox
+from six import print_
 
 from crypto.crypto_tools import CryptoTools
 from crypto.file_crypto_tools import FileCrypto
@@ -507,7 +508,7 @@ class SingleFileUploadUI(QtGui.QMainWindow):
                         # upload failed due to Farmer Failure
                         if str(e) == str(storj.exception.StorjFarmerError.SUPPLIED_TOKEN_NOT_ACCEPTED):
                             self.__logger.error('The supplied token not accepted')
-                        # print "Exception raised while trying to negitiate contract: " + str(e)
+                        # print_("Exception raised while trying to negitiate contract: " + str(e))
                         continue
 
                     except Exception as e:
