@@ -19,7 +19,7 @@ class StorjEngine:
             self.storj_client = storj.Client(email=self.email,
                                              password=self.password,
                                              do_hashing=False,
-                                             timeout=max_bridge_request_timeout,
-                                             storj_bridge=bridge_api_url)
+                                             timeout=max_bridge_request_timeout)
+                                             #storj_bridge=bridge_api_url)
             logger.debug('Login from credentials xml file')
         logger.debug('testlogin, StorjEngine')
